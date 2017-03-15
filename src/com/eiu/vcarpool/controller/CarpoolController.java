@@ -91,6 +91,12 @@ public class CarpoolController {
 		return new ModelAndView("manageCarpool", "listOfRiders", listOfRiders);
 
 	}
+	
+
+	/*
+	 * creating a session for userName and inserting a carpool details. Returns
+	 * to success page.
+	 */
 
 	@RequestMapping(value = "/deleteRider")
 	public ModelAndView deleteRider(HttpServletRequest request) {
