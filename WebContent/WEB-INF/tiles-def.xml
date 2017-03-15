@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="baseLayout" template="/WEB-INF/jsp/baseLayout.jsp">
+		<put-attribute name="title" value=" " />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="body" value=" " />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+		<put-attribute name="icons" value="/WEB-INF/jsp/icons.jsp" />
+		
+	</definition>
+	
+		<!-- Home page -->
+
+	<definition name="hello" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/hello.jsp" />
+	</definition>
+
+		<!-- Employee Registration Form -->
+
+	<definition name="addEiuEmployee" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/addEiuEmployee.jsp" />
+	</definition>
+
+			<!-- User Page after Login -->
+
+	<definition name="userPage" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="loginicons" value="/WEB-INF/jsp/afterloginicons.jsp" />
+	</definition>
+
+			<!-- failure Page -->
+
+	<definition name="failure" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/failure.jsp" />
+	</definition>
+
+
+	<definition name="logout" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/logout.jsp" />
+	</definition>
+
+	
+	<definition name="loginform" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/loginform.jsp" />
+	</definition>
+
+
+
+
+
+
+			<!-- loginLayout -->
+
+
+	<definition name="addCarpool" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/addCarpool.jsp" />
+	</definition>
+
+
+
+	<definition name="success" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/success.jsp" />
+	</definition>
+
+	<definition name="aboutUs" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/aboutUs.jsp" />
+	</definition>
+
+
+		<!-- Search A CarPool without Login -->
+
+
+	<definition name="findCarpool" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body" value="/WEB-INF/jsp/findCarpool.jsp" />
+	</definition>
+	
+
+	
+<!-- replace with searchresults_suri.jsp -->
+	<definition name="searchresults" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body" value="/WEB-INF/jsp/searchresults.jsp" />
+	</definition>
+
+
+	<definition name="popupdetails" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/popupdetails.jsp" />
+	</definition>
+
+
+<definition name="forgotpassword" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/forgotpassword.jsp" />
+	</definition>
+
+<definition name="inbox" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/inbox.jsp" />
+	</definition>
+	
+	<definition name="manageCarpool" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+
+		<put-attribute name="body" value="/WEB-INF/jsp/manageCarpool.jsp" />
+	</definition>
+</tiles-definitions>
